@@ -1,0 +1,27 @@
+# AI Test Case Generator Configuration
+
+model:
+  provider: gemini
+  name: gemini-2.0-flash
+  temperature: 0.7
+  max_tokens: 4000
+
+output:
+  default_format: gherkin  # gherkin, pytest, testng, plain, json
+  include_edge_cases: true
+  max_test_cases: 20
+
+# Jira integration (credentials via environment variables)
+jira:
+  # url: https://your-company.atlassian.net
+  # Set JIRA_URL, JIRA_EMAIL, JIRA_API_TOKEN in .env
+
+# Edge case detection settings
+edge_cases:
+  include_universal: true
+  categories:
+    - input
+    - authentication
+    - network
+    - dates
+

@@ -1,0 +1,17 @@
+# Core dependencies
+google-generativeai>=0.8.0
+python-dotenv>=1.0.0
+
+# Optional: Template rendering
+jinja2>=3.1.0
+
+# Optional: Jira integration
+requests>=2.31.0
+
+# Optional: YAML config
+pyyaml>=6.0
+
+# Development
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+

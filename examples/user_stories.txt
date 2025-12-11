@@ -1,0 +1,73 @@
+# Example User Stories for Test Case Generation
+
+## User Story 1: User Login
+
+As a registered user,
+I want to log in to my account using my email and password,
+so that I can access my personalized dashboard.
+
+Acceptance Criteria:
+- Email field validates proper email format
+- Password field masks input characters
+- "Remember me" checkbox keeps user logged in for 30 days
+- Error message shown for invalid credentials
+- Account locks after 5 consecutive failed attempts
+- Locked accounts unlock after 30 minutes
+- Successful login redirects to dashboard
+
+---
+
+## User Story 2: Password Reset
+
+As a user who forgot my password,
+I want to reset my password via email,
+so that I can regain access to my account.
+
+Acceptance Criteria:
+- "Forgot Password" link on login page
+- User enters registered email address
+- Reset email sent within 5 minutes
+- Reset link expires after 24 hours
+- New password must be at least 8 characters
+- New password must contain uppercase, lowercase, number, and special character
+- Cannot reuse last 5 passwords
+- Confirmation email sent after successful reset
+
+---
+
+## User Story 3: Shopping Cart
+
+As an online shopper,
+I want to add items to my shopping cart,
+so that I can purchase multiple items in a single transaction.
+
+Acceptance Criteria:
+- "Add to Cart" button on product page
+- Cart icon shows number of items
+- Can update item quantity in cart
+- Can remove items from cart
+- Cart persists across browser sessions
+- Out-of-stock items cannot be added
+- Maximum 99 of any single item
+- Cart total updates automatically
+- Applied discounts shown in cart
+
+---
+
+## User Story 4: File Upload
+
+As a user,
+I want to upload my profile picture,
+so that other users can identify me.
+
+Acceptance Criteria:
+- Upload button on profile settings page
+- Supported formats: JPG, PNG, GIF
+- Maximum file size: 5MB
+- Image cropping tool available
+- Preview before saving
+- Minimum dimensions: 100x100 pixels
+- Maximum dimensions: 2000x2000 pixels
+- Progress indicator during upload
+- Error message for unsupported files
+
